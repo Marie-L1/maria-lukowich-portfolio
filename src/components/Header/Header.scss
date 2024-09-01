@@ -1,0 +1,37 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+
+    &__title-wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    &__logo{
+        width: 30px;
+        height: 30px;
+    }
+    &__title{
+        @include page-header;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    &__nav-about, &__nav-projects{
+        @include subheader;
+
+    }
+    @include tablet{
+
+    }
+    @include desktop{
+
+    }
+}
