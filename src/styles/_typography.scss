@@ -1,20 +1,21 @@
 @font-face {
     font-family: "Inconsolata";
-    src: url("../assets/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
+    src: url("../assets/fonts/Inconsolata_Condensed-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("../assets/fonts/Inconsolata_Condensed-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inconsolata";
-    src: url("../assets/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
+    src: url("../assets/fonts/Inconsolata_Condensed-Medium.ttf");
     font-weight: 500;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Inconsolata";
-    src: url("../assets/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
-    font-weight: 600;
-    font-style: normal;
-}
