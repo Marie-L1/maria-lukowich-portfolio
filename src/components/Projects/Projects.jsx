@@ -3,7 +3,7 @@ import React from "react";
 function Projects() {
   return (
     <section className="projects">
-      <card className="projects__card">
+      <div className="projects__card">
         <ul className="projects__list">
           <li className="projects__item-img">
             <img className="projects__img"></img>
@@ -18,8 +18,8 @@ function Projects() {
             <h2></h2>
           </li>
         </ul>
-      </card>
-      <card className="projects__card">
+      </div>
+      <div className="projects__card">
         <ul className="projects__list">
           <li className="projects__item-img">
             <img className="projects__img"></img>
@@ -34,8 +34,8 @@ function Projects() {
             <h2></h2>
           </li>
         </ul>
-      </card>
-      <card className="projects__card">
+      </div>
+      <div className="projects__card">
         <ul className="projects__list">
           <li className="projects__item-img">
             <img className="projects__img"></img>
@@ -50,7 +50,7 @@ function Projects() {
             <h2></h2>
           </li>
         </ul>
-      </card>
+      </div>
     </section>
   );
 }

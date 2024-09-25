@@ -10,11 +10,9 @@ function App() {
   return (
     <>
     <Header />
-    <body>
     <Hero />
     <About />
     <Projects />
-    </body>
     </>
   )
 }

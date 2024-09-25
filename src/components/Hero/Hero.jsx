@@ -1,22 +1,27 @@
 import React from "react";
 import "./Hero.scss";
-import myImg from "../../assets/images/Maria-Lukowich_LI (1).png";
+import myImg from "../../assets/images/personal-img-use.png";
 import linkedin from "../../assets/images/linkedin-logo.webp";
 import github from "../../assets/images/github-logo.png";
 
 function Hero() {
   return (
     <section className="hero">
-      <img className="hero__img" src={myImg} alt="#"></img>
-      <h2 className="hero__welcome">Welcome</h2>
+      <img className="hero__img" src={myImg} alt="profile image"></img>
+      <div className="hero__content-wrapper">
+      <h2 className="hero__welcome">Hello I'm Maria Lukowich</h2>
+      <p className="hero__description">I'm a Software Engineer with a background in Food Research and Development and Quality Assurance.</p>
+        <h3 className="hero__contact-title">Contact Me!</h3>
       <div className="hero__contact-wrapper">
-        <a href="#">
+        <a href="https://www.linkedin.com/in/maria-lukowich/">
           <img className="hero__linkedin-img" src={linkedin}></img>
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/maria-lukowich/">
           <img className="hero__github-img" src={github}></img>
         </a>
+        <button className="hero__resume-button">Resume</button>
       </div>
+    </div>
     </section>
   );
 }

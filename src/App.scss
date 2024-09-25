@@ -1,8 +1,10 @@
+@use './styles/variables' as *;
+@use './styles/typography' as *;
+@use './styles/mixins' as *;
 html{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     overflow: none;
-    background-image: url("../../portfolio/src/assets/images/background-img.jpg");
-    background-size: cover;
+    background-color: $cream;
 }

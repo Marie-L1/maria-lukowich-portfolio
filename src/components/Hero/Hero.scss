@@ -3,7 +3,7 @@
 @use '../../styles/mixins' as *;
 
 .hero{
-    background-color: $secondary-green;
+    // background-color: $secondary-green;
     background: opacity($color: #f5f5f8);
     border-radius: 5px;
     display: flex;
@@ -12,29 +12,58 @@
     padding: 10px;
 
     &__img{
-        height: 30vh;
-        width: 47vw;
-        border-radius: 55px;
-        padding-top: 50px;
-
-
+        height: 300px;
+        width: 220px;
+        border: 10px solid $primary-green;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        margin-top: 50px;
+    }
+    &__content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
     }
     &__welcome{
         display: flex;
-
+        @include section-header;
+        margin: 5px;
+    }
+    &__description{
+        @include body;
+        margin-left: 15px;
     }
     &__contact-wrapper{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-end;
-        gap: 30px;
-
+        align-items: center;
+        gap: 1.875rem;
+    }
+    &__contact-title{
+        @include subheader;
     }
     &__linkedin-img, &__github-img{
-        width: 40px;
-        height: 40px;
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+    &__resume-button{
+        background-color: $cream;
+        border-radius: 4px;
+        border: solid 2px $primary-pink;
+        width: 5rem;
+        height: 2rem;
+        @include body;
 
+        &:hover{
+            background-color: $secondary-pink;
+        }
+    }
+    @include tablet{
+
+    }
+    @include desktop{
 
     }
 

@@ -3,8 +3,10 @@
 @use '../../styles/mixins' as *;
 
 .about{
+    background-color: $secondary-light;
 
     &__title{
+        @include section-header;
 
     }
     &__description-wrapper{
@@ -17,6 +19,7 @@
 
     }
     &__education-title{
+        @include section-header;
 
     }
     &__education-item{
