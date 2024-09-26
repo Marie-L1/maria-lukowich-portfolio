@@ -3,19 +3,16 @@
 @use '../../styles/mixins' as *;
 
 .about{
-    background-color: $secondary-light;
+    margin: 40px;
 
     &__title{
         @include section-header;
 
     }
-    &__description-wrapper{
-
-    }
-    &__description{
-
-    }
     &__education-wrapper{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
 
     }
     &__education-title{
@@ -23,6 +20,7 @@
 
     }
     &__education-item{
+        @include subheader;
 
     }
 }

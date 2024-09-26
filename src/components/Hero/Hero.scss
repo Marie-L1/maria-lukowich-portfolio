@@ -3,21 +3,18 @@
 @use '../../styles/mixins' as *;
 
 .hero{
-    // background-color: $secondary-green;
-    background: opacity($color: #f5f5f8);
-    border-radius: 5px;
+    background-color: $cream;
     display: flex;
-    justify-content: space-around;
-    height: 40vh;
-    padding: 10px;
+    justify-content: space-around;   
+    padding: 0px 40px 30px 40px;
 
     &__img{
-        height: 300px;
-        width: 220px;
-        border: 10px solid $primary-green;
+        height: 250px;
+        width: 180px;
+        border: 10px solid $secondary-green;
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     &__content-wrapper{
         display: flex;
@@ -28,11 +25,13 @@
     &__welcome{
         display: flex;
         @include section-header;
+        flex-wrap: nowrap;
         margin: 5px;
+        padding-left: 10px;
     }
     &__description{
         @include body;
-        margin-left: 15px;
+        margin-left: 20px;
     }
     &__contact-wrapper{
         display: flex;
