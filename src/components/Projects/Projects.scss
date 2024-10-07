@@ -11,7 +11,6 @@
         flex-direction: column;
         justify-content: space-around;
         gap: 40px;
-       
     }
     &__item{
         display: flex;
@@ -38,7 +37,7 @@
     }
     &__item-sword{
         width: 140px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     &__item-telus{
         width: 200px;
@@ -68,6 +67,60 @@
     &__item-link-img{
         height: 30px;
         width: 30px;
+    }
+    @include tablet{
+        &__item{
+            padding: 60px;
+        }
+        &__item-img{
+            width: 300px;
+            margin-bottom: -50px;
+            margin-top: -20px;
+        }
+        &__item-sword{
+            width: 140px;
+            margin-top: 50px;
+        }
+        &__item-telus{
+            width: 220px;
+            margin-top: 25px;
+        }
+        &__item-link-img{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    @include desktop{
+        &__list{
+            flex-direction: row;
+        }
+        &__item{
+            padding: 20px;
+        }
+        &__item-description{
+            @include body;
+            margin: 0 50px;
+            text-align: center;
+        }
+        &__item-img{
+            width: 350px;
+            margin-bottom: -60px;
+            margin-top: -50px;
+        }
+        &__item-sword{
+            width: 150px;
+            margin-top: 50px;
+        }
+        &__item-telus{
+            width: 305px;
+            height: 190px;
+            margin-top: 25px;
+        }
+        &__item-link-img{
+            height: 40px;
+            width: 40px;
+        }
+        
     }
 }
     

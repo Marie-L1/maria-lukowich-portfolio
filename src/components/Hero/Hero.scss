@@ -27,10 +27,10 @@
         @include section-header;
         flex-wrap: nowrap;
         margin: 5px;
-        padding-left: 10px;
+        padding-left: 30px;
     }
     &__description{
-        @include body;
+        @include body-large;
         margin-left: 30px;
     }
     &__contact-wrapper{
@@ -53,17 +53,51 @@
         border: solid 2px $primary-pink;
         width: 5rem;
         height: 2rem;
-        @include body;
+        @include body-large;
 
         &:hover{
             background-color: $secondary-pink;
         }
     }
     @include tablet{
+        padding: 0px 55px 30px 55px;
 
+        &__img{
+            height: 350px;
+            width: 280px;
+            margin-bottom: 20px;
+        }
+        &__linkedin-img, &__github-img{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        &__resume-button{
+            width: 5.5rem;
+            height: 2.5rem;
+        }
     }
     @include desktop{
+        padding: 0px 200px 30px 200px;
 
+        &__img{
+            height: 400px;
+            width: 350px;
+            border: 20px solid $secondary-green;
+            margin-left: 350px;
+            margin-right: -50px;
+        }
+        &__description{
+            @include body-large;
+            margin: 10px 200px;
+        }
+        &__linkedin-img, &__github-img{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        &__resume-button{
+            width: 7rem;
+            height: 3.5rem;
+        }
     }
 
 }

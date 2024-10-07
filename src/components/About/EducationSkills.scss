@@ -8,12 +8,16 @@
     &__title{
         @include section-header;
     }
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+    }
     &__education, &__skills{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 10px;
-        align-items: flex-start;
+        align-items: center;
 
     }
     &__education-title, &__skills-title{
@@ -36,6 +40,14 @@
     }
     &__skills-learning{
         @include subheader;
+        border-bottom: 2px solid $secondary-pink;
+    }
+
+    @include tablet{
+
+    }
+    @include desktop{
+
     }
 }
 
@@ -60,5 +72,11 @@
         font-weight: bold;
 
         }
+    }
+    @include tablet{
+
+    }
+    @include desktop{
+        
     }
 }

@@ -25,7 +25,6 @@ function EducationSkills() {
             <li className="about__education-item">Culinary Arts Diploma, NAIT</li>
           </ul>
         )}
-      </div>
       {activeSection === 'skills' && (
         <ul className="about__skills">
           <h2 className="about__skills-title">Research and Development Skills</h2>
@@ -52,6 +51,7 @@ function EducationSkills() {
           <h3 className="about__skills-learning">Currently learning: TypeScript, Tailswind</h3>
         </ul>
       )}
+    </div>
     </div>
   );
 }
