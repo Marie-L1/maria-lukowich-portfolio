@@ -9,8 +9,10 @@ function Hero() {
     <section className="hero">
       <img className="hero__img" src={myImg} alt="profile image"></img>
       <div className="hero__content-wrapper">
-      <h2 className="hero__welcome">Hello I'm Maria Lukowich</h2>
-      <p className="hero__description">I'm a Software Engineer with a background in Food Research and Development and Quality Assurance.</p>
+      <h2 className="hero__welcome">Hello, I'm Maria Lukowich</h2>
+      <p className="hero__description">I'm a software engineer with a background in Food Research and Development and Quality Assurance.
+       My experience with data analysis and problem-solving helps me build reliable, efficient software. I’m passionate about creating user-friendly 
+       applications and excited to apply my skills to new challenges in tech.</p>
         <h3 className="hero__contact-title">Contact Me!</h3>
       <div className="hero__contact-wrapper">
         <a href="https://www.linkedin.com/in/maria-lukowich/">

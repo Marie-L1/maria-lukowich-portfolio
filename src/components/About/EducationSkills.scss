@@ -1,0 +1,64 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+
+.about{
+    margin: 40px;
+
+    &__title{
+        @include section-header;
+    }
+    &__education, &__skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        align-items: flex-start;
+
+    }
+    &__education-title, &__skills-title{
+        @include section-header;
+        padding: 10px;
+        border: 2px solid $secondary-pink;
+        border-radius: 5px;
+    }
+    &__education-item, &__skills-item{
+        @include body-large;
+        list-style: none;
+
+        &:hover{
+            background-color: $cream;
+            padding: 10px 20px;
+            border-radius: 4px;
+            box-shadow: 10px 10px $primary-pink
+        }
+
+    }
+    &__skills-learning{
+        @include subheader;
+    }
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    @include body;
+
+    button{
+        padding: 15px;
+        width: 100px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: $secondary-green;
+
+        &.active {
+        background-color: $primary-green;
+        font-weight: bold;
+
+        }
+    }
+}

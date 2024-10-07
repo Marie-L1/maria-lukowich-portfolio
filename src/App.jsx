@@ -2,9 +2,8 @@ import { useState } from 'react'
 import './App.scss'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
-import About from './components/About/About'
 import Projects from './components/Projects/Projects'
-import Tech from './components/Tech/Tech'
+import EducationSkills from './components/About/EducationSkills'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -13,8 +12,7 @@ function App() {
     <>
     <Header />
     <Hero />
-    <About />
-    <Tech />
+    <EducationSkills />
     <Projects />
     <Footer />
     </>

@@ -32,9 +32,17 @@
         border-bottom: 2px solid $primary-green;
     }
     &__item-img{
-        width: 250px;
+        width: 260px;
         margin-bottom: -50px;
-
+        margin-top: -20px;
+    }
+    &__item-sword{
+        width: 140px;
+        margin-top: 20px;
+    }
+    &__item-telus{
+        width: 200px;
+        margin-top: 25px;
     }
     &__item-description{
         @include body;
@@ -48,8 +56,14 @@
         @include body;
 
     }
-    &__tech-title{
-
+    &__link-wrapper{
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        align-items: center;
+    }
+    &__link-title{
+        @include body;
     }
     &__item-link-img{
         height: 30px;

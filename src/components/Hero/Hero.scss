@@ -9,8 +9,8 @@
     padding: 0px 40px 30px 40px;
 
     &__img{
-        height: 250px;
-        width: 180px;
+        height: 260px;
+        width: 190px;
         border: 10px solid $secondary-green;
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
@@ -31,7 +31,7 @@
     }
     &__description{
         @include body;
-        margin-left: 20px;
+        margin-left: 30px;
     }
     &__contact-wrapper{
         display: flex;

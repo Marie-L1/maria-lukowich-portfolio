@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     background-color: $cream;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     border-radius: 5px;
 
     &__title-wrapper{
@@ -30,7 +30,7 @@
         flex-direction: row;
         gap: 40px;
     }
-    &__nav-about, &__nav-projects{
+    &__nav-item{
         @include subheader;
 
     }
