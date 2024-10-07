@@ -53,20 +53,22 @@
     }
     &__item-tech{
         @include body;
-
     }
     &__link-wrapper{
         display: flex;
         justify-content: space-around;
-        gap: 10px;
+        gap: 15px;
         align-items: center;
     }
-    &__link-title{
+    &__link-title, &__item-link-one{
         @include body;
     }
     &__item-link-img{
         height: 30px;
         width: 30px;
+    }
+    & &__item-link-one{
+        text-decoration: none;
     }
     @include tablet{
         &__item{

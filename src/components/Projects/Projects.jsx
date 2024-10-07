@@ -45,8 +45,10 @@ function Projects() {
             The quiz features dynamic question shuffling, scoring, and navigation through different states (quiz, results). </p>
             <p className="projects__item-tech"><span className="projects__tech-title">Tech: </span>React, TypeScript, SCSS, JSON data</p>
             <div className="projects__link-wrapper">
-                <h2 className="projects__link-title">Link: <span></span></h2>
-              <a href="https://github.com/Marie-L1/Trivia-Quest" className="projects__item-link">
+                <h2 className="projects__link-title">Link:</h2>
+                <a href="https://trivia-quest-ashy.vercel.app/" className="projects__item-link-one">
+                  <h4 className="projects__item-link-one">Trivia Quest, </h4></a>
+                <a href="https://github.com/Marie-L1/Trivia-Quest" className="projects__item-link">
                 <img className="projects__item-link-img" src={github} alt="github logo" />
                 </a>
             </div>

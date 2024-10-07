@@ -8,11 +8,12 @@
     &__title{
         @include section-header;
     }
-    &__wrapper{
+    &__skills{
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
-    &__education, &__skills{
+    &__education{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -21,7 +22,7 @@
 
     }
     &__education-title, &__skills-title{
-        @include section-header;
+        @include subheader;
         padding: 10px;
         border: 2px solid $secondary-pink;
         border-radius: 5px;
@@ -38,16 +39,32 @@
         }
 
     }
+    &__skills-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
     &__skills-learning{
         @include subheader;
         border-bottom: 2px solid $secondary-pink;
     }
 
     @include tablet{
-
     }
     @include desktop{
-
+        padding: 100px;
+        &__education-title, &__skills-title{
+            @include section-header;
+        }
+        &__skills{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 275px;
+            margin: 50px 0;
+        }
     }
 }
 
@@ -57,7 +74,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    @include body;
+    @include body-large;
 
     button{
         padding: 15px;
@@ -74,9 +91,18 @@
         }
     }
     @include tablet{
+        &__button{
+            padding: 20px;
+            width: 120px;
+        }
 
     }
     @include desktop{
+        &__button{
+            margin-top: -30px;
+            padding: 20px;
+            width: 120px;
+        }
         
     }
 }
