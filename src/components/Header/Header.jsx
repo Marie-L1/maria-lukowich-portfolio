@@ -9,8 +9,8 @@ function Header() {
             <img className="header__logo" src={logo} alt="personal logo"></img>
         </div>
         <nav className="header__nav">
-            <h2 className="header__nav-item" href="#"><a>Education</a></h2>
-            <h2 className="header__nav-item" href="#"><a>Skills</a></h2>
+            <h2 className="header__nav-item" href="#"><a>About Me</a></h2>
+            <h2 className="header__nav-item" href="#"><a>Background</a></h2>
             <h2 className="header__nav-item" href="#"><a>Projects</a></h2>
         </nav>
     </section>
