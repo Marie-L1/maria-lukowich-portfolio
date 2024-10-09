@@ -1,0 +1,54 @@
+[
+    {
+      "title": "Trivia Quest",
+      "description": "A frontend interactive quiz web app created with React and TypeScript. 
+      The app allows users to answer questions related to family-friendly video games, anime, and fantasy themes. 
+      The quiz features dynamic question shuffling, scoring, and navigation through different states (quiz, results).",
+      "videoSrc": "../assets/videos/trivia.mov"
+    },
+    {
+      "title": "ShelfSage",
+      "description": "A full-stack web app designed for book lovers to effortlessly manage their book collections, track and achieve monthly reading goals, 
+      and receive personalized book recommendations based on their reading habits and preferences. The app offers a user-friendly interface and helps readers discover new books tailored to their tastes.",
+      "Technologies": "React, Node.js, Express, SASS, Custom Middleware, RESTFUL APIs, JWT Authentication",
+      "videoSrc": "../assets/videos/ShelfSage.mov"
+    },
+    {
+      "title": "Telus Hackathon",
+      "description": "I led backend development during a 24-hour hackathon to build an app that helps families quickly find the best streaming service bundle. 
+      The app recommends bundles based on family members’ ages and favorite genres, ensuring personalized content for everyone. I developed the backend API to process user preferences 
+      and match them with suitable streaming services in real-time.",
+      "Technologies": "React, Node.js, Express, SASS, Custom Middleware, RESTFUL APIs",
+      "videoSrc": "../assets/videos/telus.mov"
+    },
+    {
+        "title": "BrainStation Hackathon",
+        "description": "Description for Project 1",
+        "Technologies": "React, TypeScript, SASS, JSON Data",
+        "videoSrc": "../assets/videos/Hackathon-1.mov"
+      },
+      {
+        "title": "InStock",
+        "description": "Description for Project 2",
+        "Technologies": "React, TypeScript, SASS, JSON Data",
+        "videoSrc": "../assets/videos/instock.mov"
+      },
+      {
+        "title": "BrainFlix",
+        "description": "Description for Project 3",
+        "Technologies": "React, TypeScript, SASS, JSON Data",
+        "videoSrc": "../assets/videos/brainflix.mov"
+      },
+      {
+        "title": "Bandsite",
+        "description": "Description for Project 2",
+        "Technologies": "React, TypeScript, SASS, JSON Data",
+        "videoSrc": "../assets/videos/bandsite.mov"
+      },
+      {
+        "title": "Coffee Shop",
+        "description": "Description for Project 3",
+        "Technologies": "HTML, CSS",
+        "videoSrc": "../assets/videos/coffeeshop.mov"
+      }
+  ]
