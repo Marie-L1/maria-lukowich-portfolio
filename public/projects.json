@@ -10,7 +10,7 @@
       "title": "ShelfSage",
       "description": "A full-stack web app designed for book lovers to effortlessly manage their book collections, track and achieve monthly reading goals, and receive personalized book recommendations based on their reading habits and preferences. The app offers a user-friendly interface and helps readers discover new books tailored to their tastes.",
       "technologies": "React, Node.js, Express, SASS, Custom Middleware, RESTFUL APIs, JWT Authentication",
-      "videoSrc": "./videos/ShelfSage.mov",
+      "videoSrc": "./videos/shelfsage.mov",
       "link": "https://github.com/Marie-L1/ShelfSage-FrontEnd"
     },
     {
