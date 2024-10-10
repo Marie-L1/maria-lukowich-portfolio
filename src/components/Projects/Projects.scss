@@ -2,125 +2,93 @@
 @use '../../styles/typography' as *;
 @use '../../styles/mixins' as *;
 
-.projects{
+.project{
     background-color: $secondary-pink;
     padding: 20px 0;
 
-    &__list{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 40px;
-    }
-    &__item{
+    &__content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 4px solid $primary-pink;
-        padding: 20px;
-        margin-right: 40px;
-        border-radius: 50px;
-        box-shadow: 10px 10px $primary-pink;
-        background-color: $secondary-light;
-        gap: 20px;
     }
-    &__item-title{
+
+    &__title{
         @include section-header;
-        margin-bottom: -30px;
-        border-bottom: 2px solid $primary-green;
+        background-color: $secondary-light;
+        padding: 15px;
+        border-radius: 10px;
     }
-    &__item-img{
-        width: 260px;
-        margin-bottom: -50px;
-        margin-top: -20px;
+    &__video{
+        background-color: $secondary-light;
+        width: 90vw;
+        height: 90vh;
+        box-shadow: 30px 10px $primary-pink;
+        border-radius: 20px;
     }
-    &__item-sword{
-        width: 140px;
-        margin-top: 30px;
+    &__description{
+        @include body-large;
+        padding: 20px 60px;
+        background-color: $secondary-light;
     }
-    &__item-telus{
-        width: 200px;
-        margin-top: 25px;
-    }
-    &__item-description{
-        @include body;
-        margin: 0 50px;
-        text-align: center;
-    }
-    &__tech-title{
-        @include subheader;
-    }
-    &__item-tech{
-        @include body;
-    }
-    &__link-wrapper{
-        display: flex;
-        justify-content: space-around;
-        gap: 15px;
-        align-items: center;
-    }
-    &__link-title, &__item-link-one{
-        @include body;
-    }
-    &__item-link-img{
-        height: 30px;
-        width: 30px;
-    }
-    & &__item-link-one{
+    &__link{
+        font-weight: 800;
+        color: $primary-pink;
         text-decoration: none;
     }
-    @include tablet{
-        &__item{
-            padding: 60px;
-        }
-        &__item-img{
-            width: 300px;
-            margin-bottom: -50px;
-            margin-top: -20px;
-        }
-        &__item-sword{
-            width: 140px;
-            margin-top: 50px;
-        }
-        &__item-telus{
-            width: 220px;
-            margin-top: 25px;
-        }
-        &__item-link-img{
-            height: 40px;
-            width: 40px;
+    &__tech{
+        @include subheader;
+        padding: 20px 60px;
+        background-color: $secondary-light;
+        border-radius: 20px;
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        gap: 30px;
+    }
+    &__button-previous, &__button-next{
+        background-color: $secondary-pink;
+        border-radius: 5px;
+        border: none;
+        width: 100px;
+        padding: 15px;
+        @include body-large;
+
+        &:hover{
+            background-color: $primary-pink;
         }
     }
-    @include desktop{
-        &__list{
-            flex-direction: row;
+
+    
+    @include tablet{
+
+        &__title{
+            @include section-header;
+            background-color: $secondary-light;
+            padding: 30px;
+            border-radius: 10px;
         }
-        &__item{
-            padding: 20px;
-        }
-        &__item-description{
-            @include body;
-            margin: 0 50px;
-            text-align: center;
-        }
-        &__item-img{
-            width: 350px;
-            margin-bottom: -60px;
-            margin-top: -50px;
-        }
-        &__item-sword{
+        &__button-previous, &__button-next{
+            border-radius: 5px;
+            border: none;
             width: 150px;
-            margin-top: 50px;
+            padding: 25px;
         }
-        &__item-telus{
-            width: 305px;
-            height: 190px;
-            margin-top: 25px;
+        
+    }
+    @include desktop{
+        &__title{
+            padding: 30px;
         }
-        &__item-link-img{
-            height: 40px;
-            width: 40px;
+        &__description{
+            padding: 30px 450px;
+        }
+        &__button-previous, &__button-next{
+            width: 150px;
+            padding: 25px;
         }
         
     }
