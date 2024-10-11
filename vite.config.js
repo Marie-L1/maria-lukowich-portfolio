@@ -9,4 +9,8 @@ export default defineConfig({
       input: './src/main.jsx', // Adjust this if your entry file is different
     },
   },
+  server: {
+    historyApiFallback: true, // Ensures proper routing
+  }
 });
+
