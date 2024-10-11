@@ -7,28 +7,25 @@
     padding: 20px 0;
 
     &__content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-column;
+        @include justifyContent-alignItems-center;
     }
-
     &__title{
         @include section-header;
         background-color: $secondary-light;
-        padding: 15px;
-        border-radius: 10px;
+        padding: .9375rem;
+        border-radius: .625rem;
     }
     &__video{
         background-color: $secondary-light;
         width: 90vw;
         height: 90vh;
-        box-shadow: 30px 10px $primary-pink;
-        border-radius: 20px;
+        box-shadow: 1.875rem .625rem $primary-pink;
+        border-radius: 1.25rem;
     }
     &__description{
         @include body-large;
-        padding: 20px 60px;
+        padding: 1.25rem 3.75rem;
         background-color: $secondary-light;
     }
     &__link{
@@ -38,23 +35,21 @@
     }
     &__tech{
         @include subheader;
-        padding: 20px 60px;
+        padding: 1.25rem 60px;
         background-color: $secondary-light;
-        border-radius: 20px;
+        border-radius: 1.25rem;
     }
     &__buttons{
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
-        align-items: center;
-        gap: 30px;
+        @include flex-column;
+        @include justifyContent-alignItems-center;
+        gap: 1.875rem;
     }
     &__button-previous, &__button-next{
         background-color: $secondary-pink;
-        border-radius: 5px;
+        border-radius: .3125rem;
         border: none;
-        width: 100px;
-        padding: 15px;
+        width: 6.25rem;
+        padding: .9375rem;
         @include body-large;
 
         &:hover{
@@ -62,33 +57,32 @@
         }
     }
 
-    
     @include tablet{
 
         &__title{
             @include section-header;
             background-color: $secondary-light;
-            padding: 30px;
-            border-radius: 10px;
+            padding: 1.875rem;
+            border-radius: .625rem;
         }
         &__button-previous, &__button-next{
-            border-radius: 5px;
+            border-radius: .3125rem;
             border: none;
-            width: 150px;
-            padding: 25px;
+            width: 9.375rem;
+            padding: 1.5625rem;
         }
         
     }
     @include desktop{
         &__title{
-            padding: 30px;
+            padding: 1.875rem;
         }
         &__description{
-            padding: 30px 450px;
+            padding: 1.875rem 28.125rem;
         }
         &__button-previous, &__button-next{
-            width: 150px;
-            padding: 25px;
+            width: 9.375rem;
+            padding: 1.5625rem;
         }
         
     }

@@ -96,3 +96,50 @@
 }
 
 
+// FLEX BOX
+@mixin flex-row{
+    display: flex;
+    flex-flow: row;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-flow: column;
+}
+
+@mixin flex-column-align-center{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+@mixin align-items-center{
+    display: flex;
+    align-items: center;
+}
+
+@mixin justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin justifyContent-alignItems-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin justifyContent-alignContent-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin justify-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+@mixin justify-between{
+    display: flex;
+    justify-content: space-between;
+}

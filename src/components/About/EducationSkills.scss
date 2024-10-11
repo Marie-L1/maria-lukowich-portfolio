@@ -3,34 +3,30 @@
 @use '../../styles/mixins' as *;
 
 .about{
-    margin: 40px;
+    margin: 2.5rem;
     background-color: $secondary-green;
-    border-radius: 50px;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    border-radius: 3.125rem;
+    padding: 1.25rem 0 1.875rem 0;
 
     &__title{
         @include section-header;
     }
     &__skills{
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         justify-content: space-evenly;
     }
     &__education{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        align-items: center;
+        @include flex-column;
+        @include justifyContent-alignItems-center;
+        gap: .625rem;
     }
     &__education-img, &__skills-img{
-        width: 30px;
+        width: 1.875rem;
     }
     &__education-title, &__skills-title{
         @include subheader;
-        padding: 10px;
-        border-bottom: 2px solid $primary-green;
+        padding: .625rem;
+        border-bottom: .125rem solid $primary-green;
     }
     &__skills-name, &__education-name{
         @include body-large;
@@ -38,65 +34,57 @@
     &__education-item, &__skills-item{
         @include body;
         list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+        @include flex-column;
+        @include justifyContent-alignItems-center;
+        gap: .625rem;
 
         &:hover{
             background-color: $cream;
-            padding: 10px 20px;
-            border-radius: 4px;
-            box-shadow: 10px 10px $primary-pink
+            padding: .625rem 1.25rem;
+            border-radius: .25rem;
+            box-shadow: .625rem .625rem $primary-pink
         }
     }
     &__education-wrapper{
-        padding: 0 20px;
-        margin-right: 40px;
-        width: 300px;
-        display: flex;
-        flex-direction: row;
+        padding: 0 1.25rem;
+        margin-right: 2.5rem;
+        width: 18.75rem;
+        @include flex-row;
         justify-content: center;
         align-items: flex-start;
-        gap: 10px;
+        gap: .625rem;
         background-color: $secondary-light;
-        border-radius: 50px;
+        border-radius: 3.125rem;
     }
     &__skills-wrapper{
-        width: 400px;
+        width: 25rem;
     }
     &__skills-wrapper, &__education-wrapper{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 10px;
+        gap: .625rem;
         background-color: $secondary-light;
-        border-radius: 50px;
-        padding-bottom: 20px;
-        margin-right: 40px;
-        padding: 40px;
+        border-radius: 3.125rem;
+        margin-right: 2.5rem;
+        padding: 2.5rem;
     }
     &__skills-sides, &__education-sides{
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         justify-content: space-around;
         align-items: flex-start;
-        gap: 50px;
+        gap: 3.125rem;
     }
     &__education-sides{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+        @include flex-row;
+        @include justifyContent-alignItems-center;
+        gap: 1.25rem;
     }
 
     @include tablet{
     }
     @include desktop{
-        padding: 150px;
+        padding: 9.375rem;
         
         &__education-title, &__skills-title{
             @include section-header;
@@ -104,7 +92,7 @@
         &__education-wrapper{
             display: flex;
             justify-content: flex-start;
-            padding: 20px 150px 30px 150px;
+            padding: 1.25rem 9.375rem 1.875rem 9.375rem;
         }
         &__education-item{
             padding: 0;
@@ -113,32 +101,28 @@
             @include body-large;
         }
         &__skills-wrapper, &__education-wrapper{
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             justify-content: flex-start;
             align-items: center;
-            gap: 10px;
+            gap: .625rem;
             background-color: $secondary-light;
-            border-radius: 50px;
-            padding-bottom: 20px;
-            width: 600px
+            border-radius: 3.125rem;
+            padding-bottom: 1.25rem;
+            width: 37.5rem;
         }
-    
     }
 }
 
 .tabs{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    @include flex-row;
+    @include justifyContent-alignItems-center;
+    gap: 1.875rem;
 
     button{
-        padding: 15px;
-        width: 100px;
+        padding: .9375rem;
+        width: 6.25rem;
         border: none;
-        border-radius: 4px;
+        border-radius: .25rem;
         cursor: pointer;
         background-color: $secondary-green;
         @include body-large;
@@ -146,21 +130,19 @@
         &.active {
         background-color: $primary-green;
         font-weight: bold;
-
         }
     }
     @include tablet{
         button{
-            padding: 20px;
-            width: 120px;
+            padding: 1.25rem;
+            width: 7.5rem;
         }
-
     }
     @include desktop{
         button{
-            margin-top: -30px;
-            padding: 25px;
-            width: 200px;
+            margin-top: -1.875rem;
+            padding: 1.5625rem;
+            width: 12.5rem;
             @include body-large;
         }
         

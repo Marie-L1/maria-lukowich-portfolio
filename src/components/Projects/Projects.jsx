@@ -18,31 +18,48 @@ const ProjectShowcase = () => {
   };
 
   const handlePreviousProject = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + projects.length) % projects.length
+    );
   };
 
   if (projects.length === 0) {
     return <div>Loading...</div>;
   }
 
-  const { title, description, technologies, videoSrc, link } = projects[currentIndex];
+  const { title, description, technologies, videoSrc, link } =
+    projects[currentIndex];
 
   return (
-    <div className="project">
+    <div className="project" id="projects">
       <div className="project__content">
         <h2 className="project__title">{title}</h2>
         <video className="project__video" controls src={videoSrc}></video>
         <p className="project__description">
-          {description} 
+          {description}
           <span className="project__link">
-            <a className="project__link" href={link} target="_blank" rel="noopener noreferrer">View Project</a>
+            <a
+              className="project__link"
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
           </span>
         </p>
         <h3 className="project__tech">Technologies: {technologies}</h3>
       </div>
       <div className="project__buttons">
-        <button className="project__button-previous" onClick={handlePreviousProject}>Previous</button>
-        <button className="project__button-next" onClick={handleNextProject}>Next</button>
+        <button
+          className="project__button-previous"
+          onClick={handlePreviousProject}
+        >
+          Previous
+        </button>
+        <button className="project__button-next" onClick={handleNextProject}>
+          Next
+        </button>
       </div>
     </div>
   );
