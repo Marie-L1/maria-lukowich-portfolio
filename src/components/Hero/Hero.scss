@@ -1,0 +1,100 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+
+.hero{
+    background-color: $cream;
+    display: flex;
+    justify-content: space-around;   
+    padding: 0 2.5rem 1.875rem 2.5rem;
+
+    &__img{
+        height: 16.25rem;
+        width: 11.875rem;
+        border: .625rem solid $secondary-green;
+        border-top-right-radius: 3.125rem;
+        border-top-left-radius: 3.125rem;
+        margin-top: 1.25rem;
+    }
+    &__content-wrapper{
+        @include flex-column;
+        @include justifyContent-alignItems-center;   
+    }
+    &__welcome{
+        display: flex;
+        @include section-header;
+        flex-wrap: nowrap;
+        margin: .3125rem;
+        padding-left: 1.875rem;
+    }
+    &__description{
+        @include body-large;
+        margin-left: 1.875rem;
+    }
+    &__contact-wrapper{
+        @include flex-row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.875rem;
+    }
+    &__contact-title{
+        @include subheader;
+    }
+    &__linkedin-img, &__github-img{
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+    &__resume-button{
+        background-color: $cream;
+        border-radius: .25rem;
+        border: solid .125rem $primary-pink;
+        width: 5rem;
+        height: 2rem;
+        @include body-large;
+
+        &:hover{
+            background-color: $secondary-pink;
+        }
+    }
+    @include tablet{
+        padding: 0 3.4375rem 1.875rem 3.4375rem;
+
+        &__img{
+            height: 21.875rem;
+            width: 17.5rem;
+            margin-bottom: 1.25rem;
+            border: 15px solid $secondary-green;
+        }
+        &__linkedin-img, &__github-img{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        &__resume-button{
+            width: 5.5rem;
+            height: 2.5rem;
+        }
+    }
+    @include desktop{
+        padding: 3.125rem 12.5rem 1.875rem 12.5rem;
+
+        &__img{
+            height: 29rem;
+            width: 25rem;
+            border: 1.25rem solid $secondary-green;
+            margin: 0 -3.125rem 0 21.875rem;
+        }
+        &__description{
+            @include body-large;
+            margin: .625rem 12.5rem;
+        }
+        &__linkedin-img, &__github-img{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        &__resume-button{
+            width: 7rem;
+            height: 3.5rem;
+        }
+    }
+
+}
