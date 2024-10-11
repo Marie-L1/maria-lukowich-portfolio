@@ -34,7 +34,13 @@ const ProjectShowcase = () => {
     <div className="project" id="projects">
       <div className="project__content">
         <h2 className="project__title">{title}</h2>
-        <video className="project__video" controls src={videoSrc}></video>
+        <iframe
+            className="project__video"
+            src={videoSrc}
+            title={title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         <p className="project__description">
           {description}
           <span className="project__link">
