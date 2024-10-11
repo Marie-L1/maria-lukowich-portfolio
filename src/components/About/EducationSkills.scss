@@ -12,7 +12,7 @@
         @include section-header;
     }
     &__skills{
-        @include flex-row;
+        @include flex-column;
         justify-content: space-evenly;
     }
     &__education{
@@ -82,10 +82,18 @@
     }
 
     @include tablet{
+        &__skills{
+            @include flex-row;
+            justify-content: space-evenly;
+        }
     }
     @include desktop{
         padding: 9.375rem;
         
+        &__skills{
+            @include flex-row;
+            justify-content: space-evenly;
+        }
         &__education-title, &__skills-title{
             @include section-header;
         }
