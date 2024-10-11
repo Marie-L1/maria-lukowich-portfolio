@@ -34,7 +34,7 @@
     &__education-item, &__skills-item{
         @include body;
         list-style: none;
-        @include flex-column;
+        @include flex-row;
         @include justifyContent-alignItems-center;
         gap: .625rem;
 

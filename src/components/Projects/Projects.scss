@@ -40,7 +40,7 @@
         border-radius: 1.25rem;
     }
     &__buttons{
-        @include flex-column;
+        @include flex-row;
         @include justifyContent-alignItems-center;
         gap: 1.875rem;
     }
