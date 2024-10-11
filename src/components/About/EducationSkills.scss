@@ -1,0 +1,150 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+
+.about{
+    margin: 2.5rem;
+    background-color: $secondary-green;
+    border-radius: 3.125rem;
+    padding: 1.25rem 0 1.875rem 0;
+
+    &__title{
+        @include section-header;
+    }
+    &__skills{
+        @include flex-row;
+        justify-content: space-evenly;
+    }
+    &__education{
+        @include flex-column;
+        @include justifyContent-alignItems-center;
+        gap: .625rem;
+    }
+    &__education-img, &__skills-img{
+        width: 1.875rem;
+    }
+    &__education-title, &__skills-title{
+        @include subheader;
+        padding: .625rem;
+        border-bottom: .125rem solid $primary-green;
+    }
+    &__skills-name, &__education-name{
+        @include body-large;
+    }
+    &__education-item, &__skills-item{
+        @include body;
+        list-style: none;
+        @include flex-column;
+        @include justifyContent-alignItems-center;
+        gap: .625rem;
+
+        &:hover{
+            background-color: $cream;
+            padding: .625rem 1.25rem;
+            border-radius: .25rem;
+            box-shadow: .625rem .625rem $primary-pink
+        }
+    }
+    &__education-wrapper{
+        padding: 0 1.25rem;
+        margin-right: 2.5rem;
+        width: 18.75rem;
+        @include flex-row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: .625rem;
+        background-color: $secondary-light;
+        border-radius: 3.125rem;
+    }
+    &__skills-wrapper{
+        width: 25rem;
+    }
+    &__skills-wrapper, &__education-wrapper{
+        @include flex-column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: .625rem;
+        background-color: $secondary-light;
+        border-radius: 3.125rem;
+        margin-right: 2.5rem;
+        padding: 2.5rem;
+    }
+    &__skills-sides, &__education-sides{
+        @include flex-row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 3.125rem;
+    }
+    &__education-sides{
+        @include flex-row;
+        @include justifyContent-alignItems-center;
+        gap: 1.25rem;
+    }
+
+    @include tablet{
+    }
+    @include desktop{
+        padding: 9.375rem;
+        
+        &__education-title, &__skills-title{
+            @include section-header;
+        }
+        &__education-wrapper{
+            display: flex;
+            justify-content: flex-start;
+            padding: 1.25rem 9.375rem 1.875rem 9.375rem;
+        }
+        &__education-item{
+            padding: 0;
+        }
+        &__education-item, &__skills-item{
+            @include body-large;
+        }
+        &__skills-wrapper, &__education-wrapper{
+            @include flex-column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: .625rem;
+            background-color: $secondary-light;
+            border-radius: 3.125rem;
+            padding-bottom: 1.25rem;
+            width: 37.5rem;
+        }
+    }
+}
+
+.tabs{
+    @include flex-row;
+    @include justifyContent-alignItems-center;
+    gap: 1.875rem;
+
+    button{
+        padding: .9375rem;
+        width: 6.25rem;
+        border: none;
+        border-radius: .25rem;
+        cursor: pointer;
+        background-color: $secondary-green;
+        @include body-large;
+
+        &.active {
+        background-color: $primary-green;
+        font-weight: bold;
+        }
+    }
+    @include tablet{
+        button{
+            padding: 1.25rem;
+            width: 7.5rem;
+        }
+    }
+    @include desktop{
+        button{
+            margin-top: -1.875rem;
+            padding: 1.5625rem;
+            width: 12.5rem;
+            @include body-large;
+        }
+        
+    }
+}

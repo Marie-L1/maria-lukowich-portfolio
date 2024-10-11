@@ -1,0 +1,13 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+
+.footer{
+    background-color: $cream;
+    padding: 2.5rem;
+
+    &__content{
+        @include body;
+        text-align: center;
+    }
+}

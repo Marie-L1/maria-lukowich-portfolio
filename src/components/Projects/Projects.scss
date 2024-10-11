@@ -1,0 +1,90 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+
+.project{
+    background-color: $secondary-pink;
+    padding: 20px 0;
+
+    &__content{
+        @include flex-column;
+        @include justifyContent-alignItems-center;
+    }
+    &__title{
+        @include section-header;
+        background-color: $secondary-light;
+        padding: .9375rem;
+        border-radius: .625rem;
+    }
+    &__video{
+        background-color: $secondary-light;
+        width: 90vw;
+        height: 90vh;
+        box-shadow: 1.875rem .625rem $primary-pink;
+        border-radius: 1.25rem;
+    }
+    &__description{
+        @include body-large;
+        padding: 1.25rem 3.75rem;
+        background-color: $secondary-light;
+    }
+    &__link{
+        font-weight: 800;
+        color: $primary-pink;
+        text-decoration: none;
+    }
+    &__tech{
+        @include subheader;
+        padding: 1.25rem 60px;
+        background-color: $secondary-light;
+        border-radius: 1.25rem;
+    }
+    &__buttons{
+        @include flex-column;
+        @include justifyContent-alignItems-center;
+        gap: 1.875rem;
+    }
+    &__button-previous, &__button-next{
+        background-color: $secondary-pink;
+        border-radius: .3125rem;
+        border: none;
+        width: 6.25rem;
+        padding: .9375rem;
+        @include body-large;
+
+        &:hover{
+            background-color: $primary-pink;
+        }
+    }
+
+    @include tablet{
+
+        &__title{
+            @include section-header;
+            background-color: $secondary-light;
+            padding: 1.875rem;
+            border-radius: .625rem;
+        }
+        &__button-previous, &__button-next{
+            border-radius: .3125rem;
+            border: none;
+            width: 9.375rem;
+            padding: 1.5625rem;
+        }
+        
+    }
+    @include desktop{
+        &__title{
+            padding: 1.875rem;
+        }
+        &__description{
+            padding: 1.875rem 28.125rem;
+        }
+        &__button-previous, &__button-next{
+            width: 9.375rem;
+            padding: 1.5625rem;
+        }
+        
+    }
+}
+    

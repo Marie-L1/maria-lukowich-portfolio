@@ -1,0 +1,58 @@
+[
+    {
+      "title": "Trivia Quest",
+      "description": "A frontend interactive quiz web app created with React and TypeScript. The app allows users to answer questions related to family-friendly video games, anime, and fantasy themes. The quiz features dynamic question shuffling, scoring, and navigation through different states (quiz, results).",
+      "technologies": "React, TypeScript, SASS, JSON Data",
+      "videoSrc": "./videos/trivia.mov",
+      "link": "https://trivia-quest-ashy.vercel.app/"
+    },
+    {
+      "title": "ShelfSage",
+      "description": "A full-stack web app designed for book lovers to effortlessly manage their book collections, track and achieve monthly reading goals, and receive personalized book recommendations based on their reading habits and preferences. The app offers a user-friendly interface and helps readers discover new books tailored to their tastes.",
+      "technologies": "React, Node.js, Express, SASS, Custom Middleware, RESTFUL APIs, JWT Authentication",
+      "videoSrc": "./videos/shelfsage.mov",
+      "link": "https://github.com/Marie-L1/ShelfSage-FrontEnd"
+    },
+    {
+      "title": "Telus Hackathon",
+      "description": "I led backend development during a 24-hour hackathon to build an app that helps families quickly find the best streaming service bundle. The app recommends bundles based on family members’ ages and favorite genres, ensuring personalized content for everyone. I developed the backend API to process user preferences and match them with suitable streaming services in real-time.",
+      "technologies": "React, Node.js, Express, SASS, Custom Middleware, RESTFUL APIs",
+      "videoSrc": "./videos/telus.mov",
+      "link": "https://github.com/daniyazafar/methods-industry-project-frontend"
+    },
+    {
+        "title": "BrainStation Hackathon",
+        "description": "In a fast-paced hackathon, our team built a web app that allows users to input an ingredient or cuisine to generate a recipe. Leveraging a third-party API, the app dynamically displays a recipe, and users can refresh the results to receive a new recipe if they're unsatisfied with the initial one.",
+        "technologies": "React, TypeScript, SASS, JSON Data",
+        "videoSrc": "./videos/Hackathon-1.mov",
+        "link": "https://github.com/daniyazafar/methods-industry-project-frontend"
+      },
+      {
+        "title": "InStock",
+        "description": "A team-based, agile project management experience where roles were assigned based on comfort with front-end and back-end technologies. The project involved creating a Kanban board, estimating story points for tasks, and following a sprint workflow with daily stand-ups. Implemented a feature branching strategy with GitHub, and used pull requests for code reviews and collaboration. Built features in both the front-end and back-end while ensuring smooth integration and functionality, following Scrum processes for task management and continuous delivery.",
+        "technologies": "React, TypeScript, SASS, JSON Data",
+        "videoSrc": "./videos/instock.mov",
+        "link": "https://github.com/Marie-L1/Crimson-Falcons-InStock-Backend"
+      },
+      {
+        "title": "BrainFlix",
+        "description": "A full-stack video platform where users can view, upload, and manage video content. Built a Node.js API with endpoints for fetching and adding videos, persisting data in a JSON file. Integrated with a React frontend using react-router-dom for multi-page navigation. SASS with BEM was used for styling, and the site is fully responsive, utilizing Flexbox for layout.",
+        "technologies": "React, TypeScript, SASS, JSON Data",
+        "videoSrc": "./videos/brainflix.mov",
+        "link": "https://github.com/Marie-L1/maria-lukowich-brainflix"
+      },
+      {
+        "title": "Bandsite",
+        "description": "A fully responsive music website that retrieves live data for comments and shows from a provided API. Built a class-based API service in JavaScript to handle GET and POST requests for dynamic content management. Integrated real-time comments and show details, allowing users to view and post new comments without reloading the page. The project used Sass for styling, with BEM principles for class naming, and implemented Flexbox for layout. Axios was used to interact with the API, ensuring the site's content stays updated and organized.",
+        "technologies": "React, TypeScript, SASS, JSON Data",
+        "videoSrc": "./videos/bandsite.mov",
+        "link": "https://github.com/Marie-L1/maria-lukowich-bandsite"
+      },
+      {
+        "title": "Coffee Shop",
+        "description": "A foundational front-end project designed to showcase skills in HTML, CSS, and modern web layout techniques. The project involved building a fully responsive coffee shop website, including the menu and landing page. Key elements included structured HTML components, advanced CSS techniques like Flexbox, relative units for responsive design, and the creation of reusable card components. SASS was used as a CSS preprocessor, enhancing styling efficiency, while animations were added for a polished user experience.",
+        "technologies": "HTML, CSS, SASS",
+        "videoSrc": "./videos/coffeeshop.mov",
+        "link": "https://github.com/Marie-L1/Coffee-Shop"
+      }
+  ]

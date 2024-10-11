@@ -1,0 +1,46 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+
+
+.header{
+    @include flex-column;
+    @include justifyContent-alignItems-center;
+    background-color: $cream;
+    padding: .625rem .625rem 1.25rem .625rem;
+    border-radius: .3125rem;
+
+    &__title-wrapper{
+        @include flex-row;
+        gap: .625rem;
+        align-items: center;
+    }
+    &__logo{
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+    &__title{
+        @include page-header;
+    }
+    &__nav{
+        @include flex-row;
+        gap: 2.5rem;
+    }
+    &__nav-link{
+        text-decoration: none;
+        @include subheader;
+        color: black;
+    }
+    @include tablet{
+        &__logo{
+            width: 8.125rem;
+            height: 8.125rem;
+        }
+    }
+    @include desktop{
+        &__logo{
+            width: 8.125rem;
+            height: 8.125rem;
+        }
+    }
+}
