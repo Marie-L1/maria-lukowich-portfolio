@@ -57,7 +57,7 @@
         }
     }
     @include tablet{
-        padding: 0 3rem 1.875rem 3rem;
+        padding: 0 2rem 1.875rem 2rem;
 
         &__img{
             height: 21.875rem;
@@ -85,7 +85,7 @@
         }
         &__description{
             @include body-large;
-            margin: .625rem 12.5rem;
+            // margin: .625rem 12.5rem;
         }
         &__linkedin-img, &__github-img{
             width: 3.5rem;
