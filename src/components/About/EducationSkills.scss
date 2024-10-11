@@ -32,7 +32,7 @@
         padding: 10px;
         border-bottom: 2px solid $primary-green;
     }
-    &__skills-name{
+    &__skills-name, &__education-name{
         @include body-large;
     }
     &__education-item, &__skills-item{
@@ -50,7 +50,6 @@
             border-radius: 4px;
             box-shadow: 10px 10px $primary-pink
         }
-
     }
     &__education-wrapper{
         padding: 0 20px;
@@ -79,7 +78,7 @@
         margin-right: 40px;
         padding: 40px;
     }
-    &__skills-sides{
+    &__skills-sides, &__education-sides{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -91,19 +90,21 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 200px;
+        gap: 20px;
     }
 
     @include tablet{
     }
     @include desktop{
-        padding: 100px;
+        padding: 150px;
         
         &__education-title, &__skills-title{
             @include section-header;
         }
         &__education-wrapper{
-            padding: 0 200px;
+            display: flex;
+            justify-content: flex-start;
+            padding: 20px 150px 30px 150px;
         }
         &__education-item{
             padding: 0;

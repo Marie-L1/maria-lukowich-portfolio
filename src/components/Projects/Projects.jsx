@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Projects.scss";
-import { Link } from "react-router-dom";
 
 const ProjectShowcase = () => {
   const [projects, setProjects] = useState([]);

@@ -42,28 +42,28 @@ function EducationSkills() {
             <div className="about__education-wrapper">
             <h2 className="about__education-title">Education</h2>
             <div className="about__education-sides">
-            <div className="about__education-left">
-            <li className="about__education-item">
-              <img className="about__education-img" src={dev} alt="aaps logo" />
-              Software Engineer Diploma, BrainStation</li>
-            <li className="about__education-item">
-            <img className="about__education-img" src={dev} alt="aaps logo" />
-              Introduction to Python, Certificate Harvard CS50</li>
-            <li className="about__education-item">
-            <img className="about__education-img" src={dev} alt="aaps logo" />
-              Computer Science, Certificate Harvard CS50</li>
-            </div>
-            <div className="about__education-right">
-            <li className="about__education-item">
-            <img className="about__education-img" src={chef} alt="aaps logo" />
-              Food Technology, Safety, and Quality Diploma, AAPS</li>
-              <li className="about__education-item">
-            <img className="about__education-img" src={chef} alt="aaps logo" />
-              Food Fermentation Certificate, HarvardX</li>
-            <li className="about__education-item">
-            <img className="about__education-img" src={chef} alt="aaps logo" />
-              Culinary Arts Diploma, NAIT</li>
+              <div className="about__education-left">
+                <li className="about__education-item">
+                  <img className="about__education-img" src={dev} alt="aaps logo" />
+                  <h3 className="about__skills-name">Software Engineer Diploma, BrainStation</h3></li>
+                <li className="about__education-item">
+                  <img className="about__education-img" src={dev} alt="aaps logo" />
+                  <h3 className="about__skills-name">Introduction to Python, Certificate Harvard CS50</h3></li>
+                <li className="about__education-item">
+                  <img className="about__education-img" src={dev} alt="aaps logo" />
+                  <h3 className="about__skills-name">Computer Science, Certificate Harvard CS50</h3></li>
               </div>
+              <div className="about__education-right">
+                <li className="about__education-item">
+                  <img className="about__education-img" src={chef} alt="aaps logo" />
+                  <h3 className="about__skills-name">Food Technology, Safety, and Quality Diploma, AAPS</h3></li>
+                <li className="about__education-item">
+                  <img className="about__education-img" src={chef} alt="aaps logo" />
+                  <h3 className="about__skills-name">Food Fermentation Certificate, HarvardX</h3></li>
+                <li className="about__education-item">
+                  <img className="about__education-img" src={chef} alt="aaps logo" />
+                  <h3 className="about__skills-name">Culinary Arts Diploma, NAIT</h3></li>
+                </div>
             </div>
             </div>
           </ul>
@@ -73,28 +73,28 @@ function EducationSkills() {
           <div className="about__skills-wrapper">
             <h2 className="about__skills-title">Research and Development</h2>
             <div className="about__skills-sides">
-            <div className="about__skills-left">
-            <li className="about__skills-item">
-            <img className="about__skills-img" src={light} alt="problem logo" />
-            Problem Solving</li>
-            <li className="about__skills-item">
-            <img className="about__skills-img" src={dataAnalysis} alt="aaps logo" />
-              Data Analysis</li>
-            <li className="about__skills-item">
-            <img className="about__skills-img" src={researchSummary} alt="aaps logo" />
-              Research Summaries</li>
-              </div>
-            <div className="about__skills-right">
-            <li className="about__skills-item">
-            <img className="about__skills-img" src={media} alt="aaps logo" />
-              Social Media Management</li>
-            <li className="about__skills-item">
-            <img className="about__skills-img" src={formulation} alt="aaps logo" />
-              Product Formulation</li>
-            <li className="about__skills-item">
-            <img className="about__skills-img" src={quality} alt="aaps logo" />
-              Quality Assurance</li>
-              </div>
+              <div className="about__skills-left">
+                <li className="about__skills-item">
+                  <img className="about__skills-img" src={light} alt="problem logo" />
+                  <h3 className="about__skills-name">Problem Solving</h3></li>
+                <li className="about__skills-item">
+                  <img className="about__skills-img" src={dataAnalysis} alt="aaps logo" />
+                  <h3 className="about__skills-name">Data Analysis</h3></li>
+                <li className="about__skills-item">
+                  <img className="about__skills-img" src={researchSummary} alt="aaps logo" />
+                  <h3 className="about__skills-name">Research Summaries</h3></li>
+                </div>
+              <div className="about__skills-right">
+              <li className="about__skills-item">
+                <img className="about__skills-img" src={media} alt="aaps logo" />
+                <h3 className="about__skills-name">Social Media Management</h3></li>
+                <li className="about__skills-item">
+                <img className="about__skills-img" src={quality} alt="aaps logo" />
+                <h3 className="about__skills-name">Quality Assurance</h3></li>
+              <li className="about__skills-item">
+                <img className="about__skills-img" src={formulation} alt="aaps logo" />
+                <h3 className="about__skills-name">Production Formulation</h3></li>
+                </div>
             </div>
           </div>
 
