@@ -6,11 +6,8 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: './src/main.jsx', // Adjust this if your entry file is different
+      input: './index.html',  // This ensures that Vite includes index.html
     },
   },
-  server: {
-    historyApiFallback: true, // Ensures proper routing
-  }
 });
 
