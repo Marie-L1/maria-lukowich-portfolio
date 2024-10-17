@@ -9,11 +9,13 @@
     padding: 1.25rem 0 1.875rem 0;
 
     &__title{
-        @include section-header;
+        @include page-header;
     }
     &__skills{
         @include flex-column;
+        align-items: center;
         justify-content: space-evenly;
+        gap: 1rem;
     }
     &__education{
         @include flex-column;
@@ -21,7 +23,7 @@
         gap: .625rem;
     }
     &__education-img, &__skills-img{
-        width: 1.875rem;
+        width: 1rem;
     }
     &__education-title, &__skills-title{
         @include subheader;
@@ -29,10 +31,24 @@
         border-bottom: .125rem solid $primary-green;
     }
     &__skills-name, &__education-name{
-        @include body-large;
-    }
-    &__education-item, &__skills-item{
         @include body;
+    }
+    &__education-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .625rem;
+        margin: 20px;
+
+        &:hover{
+            background-color: $cream;
+            padding: .625rem 1.25rem;
+            border-radius: .25rem;
+            box-shadow: .625rem .625rem $primary-pink
+        }
+    }
+    &__skills-item{
         list-style: none;
         @include flex-row;
         @include justifyContent-alignItems-center;
@@ -46,56 +62,78 @@
         }
     }
     &__education-wrapper{
-        padding: 0 1.25rem;
-        margin-right: 2.5rem;
-        width: 18.75rem;
-        @include flex-row;
+        @include flex-column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
+        padding: 1.5rem 2.5rem;
+        margin-right: 2.5rem;
         gap: .625rem;
         background-color: $secondary-light;
         border-radius: 3.125rem;
     }
     &__skills-wrapper{
-        width: 25rem;
-    }
-    &__skills-wrapper, &__education-wrapper{
         @include flex-column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         gap: .625rem;
         background-color: $secondary-light;
         border-radius: 3.125rem;
-        margin-right: 2.5rem;
-        padding: 2.5rem;
+        padding: 1.5rem .5rem;
+        width: 20rem;
     }
-    &__skills-sides, &__education-sides{
-        @include flex-row;
+    &__skills-sides{
+        @include flex-column;
         justify-content: space-around;
         align-items: flex-start;
-        gap: 3.125rem;
     }
     &__education-sides{
         @include flex-row;
-        @include justifyContent-alignItems-center;
+        justify-content: center;
+        align-items: flex-start;
         gap: 1.25rem;
     }
 
     @include tablet{
         &__skills{
             @include flex-row;
-            justify-content: space-evenly;
+            gap: 20px;
+            align-items: flex-start;
         }
+        &__skills-name, &__education-name{
+            @include body;
+        }
+        &__skills-sides{
+            @include flex-row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        &__skills-item{
+            gap: .625rem;
+            margin: 20px;
+        }
+        &__education-img, &__skills-img{
+            width: 1.5rem;
+        }
+         &__education-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .625rem;
+        margin: 20px;
+    }
     }
     @include desktop{
         padding: 9.375rem;
-        
+
         &__skills{
             @include flex-row;
-            justify-content: space-evenly;
         }
         &__education-title, &__skills-title{
             @include section-header;
+        }
+        &__education-img, &__skills-img{
+            width: 1.875rem;
         }
         &__education-wrapper{
             display: flex;
@@ -108,15 +146,16 @@
         &__education-item, &__skills-item{
             @include body-large;
         }
-        &__skills-wrapper, &__education-wrapper{
-            @include flex-column;
-            justify-content: flex-start;
-            align-items: center;
-            gap: .625rem;
-            background-color: $secondary-light;
-            border-radius: 3.125rem;
-            padding-bottom: 1.25rem;
-            width: 37.5rem;
+        &__skills-name, &__education-name{
+            @include body-large;
+        }
+        &__education-wrapper{
+            width: 75.5rem;
+            padding-bottom: 50px;
+        }
+        &__skills-wrapper{
+            padding: 1.5rem .5rem;
+            width: 50rem;
         }
     }
 }
