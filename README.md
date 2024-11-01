@@ -1,4 +1,4 @@
-### Welcome to my Portfolio!
+# Welcome to my Portfolio!
 
 ## You’ll find:
 ✨ Project Showcases: Detailed overviews of my work, including interactive applications and links to live demos.
