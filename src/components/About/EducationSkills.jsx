@@ -21,6 +21,8 @@ import problem from "../../assets/icons/circle-question-svgrepo-com.svg";
 import light from "../../assets/icons/lightbulb.svg";
 import postman from "../../assets/icons/postman-svgrepo-com.svg";
 import media from "../../assets/icons/instagram.svg";
+import typescript from "../../assets/icons/typescript.svg"
+import next from "../../assets/icons/next-logo.svg";
 
 function EducationSkills() {
   const [activeSection, setActiveSection] = useState("education");
@@ -222,6 +224,22 @@ function EducationSkills() {
                       alt="sql logo"
                     />
                     <h3 className="about__skills-name">mySQL/SQLite</h3>
+                  </li>
+                  <li className="about__skills-item">
+                    <img
+                      className="about__skills-img"
+                      src={typescript}
+                      alt="typescript logo"
+                    />
+                    <h3 className="about__skills-name">TypeScript</h3>
+                  </li>
+                  <li className="about__skills-item">
+                    <img
+                      className="about__skills-img"
+                      src={next}
+                      alt="next.js logo"
+                    />
+                    <h3 className="about__skills-name">Next.js</h3>
                   </li>
                   <li className="about__skills-item">
                     <img
