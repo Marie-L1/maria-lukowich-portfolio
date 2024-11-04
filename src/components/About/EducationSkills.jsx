@@ -241,6 +241,8 @@ function EducationSkills() {
                     />
                     <h3 className="about__skills-name">Next.js</h3>
                   </li>
+                </div>
+                <div className="about__skills-right">
                   <li className="about__skills-item">
                     <img
                       className="about__skills-img"
@@ -249,8 +251,6 @@ function EducationSkills() {
                     />
                     <h3 className="about__skills-name">Python</h3>
                   </li>
-                </div>
-                <div className="about__skills-right">
                   <li className="about__skills-item">
                     <img
                       className="about__skills-img"
