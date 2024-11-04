@@ -11,7 +11,7 @@ function Hero() {
       <div className="hero__content-wrapper">
         <h2 className="hero__welcome">Hello, I'm Maria Lukowich</h2>
         <p className="hero__description">
-          I'm a software engineer with a background in Food Research and
+          I'm a Web Developer with a background in Food Research and
           Development and Quality Assurance. My experience with data analysis
           and problem-solving helps me build reliable, efficient software. I’m
           passionate about creating user-friendly applications and excited to
@@ -29,7 +29,7 @@ function Hero() {
             className="hero__resume-button"
             onClick={() =>
               window.open(
-                "/MARIA-LUKOWICH-RESUME-.pdf",
+                "/-MARIA-LUKOWICH-RESUME-.pdf",
                 "_blank",
                 "noopener noreferrer"
               )
