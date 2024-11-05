@@ -29,7 +29,7 @@ function Hero() {
             className="hero__resume-button"
             onClick={() =>
               window.open(
-                "/-MARIA-LUKOWICH-RESUME-.pdf",
+                "/MARIA-LUKOWICH-RESUME-.pdf",
                 "_blank",
                 "noopener noreferrer"
               )
