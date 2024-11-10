@@ -115,8 +115,7 @@
             width: 1.5rem;
         }
          &__education-item{
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         justify-content: flex-start;
         align-items: center;
         gap: .625rem;
@@ -192,6 +191,5 @@
             width: 12.5rem;
             @include body-large;
         }
-        
     }
 }
