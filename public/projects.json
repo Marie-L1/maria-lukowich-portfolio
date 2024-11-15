@@ -1,4 +1,11 @@
 [
+  {
+    "title": "Insure Landing Page",
+    "description": "A responsive landing page built using React, TypeScript, and Sass, created as part of a styling challenge with Frontend Mentors, hosted by Frontend Queens. The project emphasizes mobile-first design and includes a mobile navigation toggle. Completed within a short timeframe, the page features clean, visually appealing styling and a user-friendly interface.",
+    "technologies": "React, TypeScript, SASS",
+    "videoSrc": "https://youtube.com/embed/du1t_sd0hwM",
+    "link": "https://github.com/Marie-L1/insure-landing-page"
+  },
     {
       "title": "Trivia Quest",
       "description": "A frontend interactive quiz web app created with React and TypeScript. The app allows users to answer questions related to family-friendly video games, anime, and fantasy themes. The quiz features dynamic question shuffling, scoring, and navigation through different states (quiz, results).",
