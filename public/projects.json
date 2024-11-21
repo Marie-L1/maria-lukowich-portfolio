@@ -1,5 +1,12 @@
 [
   {
+    "title": "Campscape",
+    "description": "A frontend campsite review platform built with Next.js and TypeScript designed to help users discover and explore campsites in Alberta. The app features dynamic routing, fast data fetching, and a fully responsive design, ensuring a smooth user experience across all devices. Users can browse campsite details, view images, and explore different regions. The review and newsletter sections are currently placeholders, as this is a mock project for a fake company. Future updates will include additional features to enhance user interaction.",
+    "technologies": "Next.js, TypeScript, SASS",
+    "videoSrc": "https://youtube.com/embed/XBgdrdt1qrc",
+    "link": "https://campscape1.vercel.app/"
+  },
+  {
     "title": "Insure Landing Page",
     "description": "A responsive landing page built using React, TypeScript, and Sass, created as part of a styling challenge with Frontend Mentors, hosted by Frontend Queens. The project emphasizes mobile-first design and includes a mobile navigation toggle. Completed within a short timeframe, the page features clean, visually appealing styling and a user-friendly interface.",
     "technologies": "React, TypeScript, SASS",
